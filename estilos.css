@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #74a676;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+h1 {
+    text-align: left;
+}
+
+ /*
+  section
+  */
+.principal {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide .textoo {
+    position: absolute;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide.active {
+    left: 0;
+}
+
+.slide.prev {
+    left: -100%;
+}
+
+.slide.next {
+    left: 100%;
+}
+
+.controles {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.controles button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s ease;
+}
+
+.controles button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+
+}
+
+  .contene{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.contene img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.texto {
+    padding: 20px;
+    width: 50%;
+}
+
+.texto h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.texto p {
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .contene {
+        flex-direction: column;
+    }
+
+    .contenerow img, .texto {
+        width: 100%;
+    }
+
+    .contene{
+        text-align: center;
+    }
+}
+
+  /*
+  el footer
+  */
+.Fondo {
+    background-color: #212121; 
+    color: #fff; 
+    padding: 30px 30px;
+    text-align: left;
+}
+.fondo2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.fondoElementos {
+    flex: 1;
+    min-width: 200px;
+    margin: 50px;
+}
+
+.fondoElementos p, .fondoElementos ul {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #c7bfbf;
+    
+}
+
+.fondoElementos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fondoElementos ul li {
+    margin-bottom: 8px;
+}
+
+.fondoElementos ul li a {
+    color: #c7bfbf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.fondoElementos ul li a:hover {
+    color: #33e90f;
+}
+.Correo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Correo p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.Correo form {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.Correo input {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+}
+
+.Correo button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f04e30;
+    color: #fff;
+    cursor: pointer;
+}
+
+

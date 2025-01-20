@@ -44,4 +44,47 @@ setInterval(() => {
   carousel.style.transform = `translateX(-${index * 100}%)`;
 }, 3000);
 
+//imagenes contraidas y expandidas
+window.addEventListener('scroll', function() {
+  var principal = document.getElementById('principal');
+  if (window.scrollY > 0) {
+      principal.style.height = '50vh';
+  } else {
+      principal.style.height = '100vh';
+  }
+});
+
+//suscribirse
+/* paste this line in verbatim */
+window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+/* customize formbutton below*/     
+formbutton("create", {
+  action: "https://formspree.io/f/meooyzal",
+  title: "How can we help?",
+  fields: [
+    { 
+      type: "email", 
+      label: "Email:", 
+      name: "email",
+      required: true,
+      placeholder: "your@email.com"
+    },
+    {
+      type: "textarea",
+      label: "Message:",
+      name: "message",
+      placeholder: "What's on your mind?",
+    },
+    { type: "submit" }      
+  ],
+  styles: {
+    title: {
+      backgroundColor: "gray"
+    },
+    button: {
+      backgroundColor: "gray"
+    }
+  }
+});
+
 

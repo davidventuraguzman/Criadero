@@ -13,14 +13,10 @@
                 <li><a href="Catalogo.html">Catálogo</a></li>
                 <li><a href="servicios">Servicios</a></li>
             </ul>
-            <script src="raa.js"></script>
         </nav>
     </header>
     <h1>Catálogo de Productos</h1>
     <section class="content">
-        <div class="Principal">
-            <img src="Imagenes/Principal.png" height="400"alt="imagen Principal"/>
-        </div>   
         <div class="contene">
             <img src="Imagenes/Vaca.jpg" alt="imagen 1">
             <div class="texto">
@@ -84,10 +80,11 @@
         </div>  
         <div class="Correo">
             <p>SUSCRÍBETE</p>
-            <form>
-                <input type="email" placeholder="Ingrese su email" required>
-                <button type="submit">Suscribirse</button>
-            </form>
+            <form action="https://formspree.io/f/meooyzal" method="POST">
+                <label for="email">Your Email</label>
+                <input name="email" id="email" type="email">
+                <button type="submit">Submit</button>
+              </form>
         </div>
     </footer>
 </body>

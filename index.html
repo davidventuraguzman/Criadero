@@ -19,7 +19,7 @@
         </nav>
     </header>
     <section>
-        <div class="principal">
+        <div id="principal"  class="principal">
                 <div class="slide active">
                     <img src="Imagenes/Vaca.jpg" alt="Imagen 1">
                     <div class="textoo">
@@ -45,7 +45,7 @@
         </div>
     </section>
     <section class="content">
-                <h1>sobre nosotros</h1>
+                <h1>Sobre Nosotros</h1>
                     <p>
                     AGRONEGOCIOS L & S S.A.C. es una empresa peruana dedicada a la 
                     crianza y comercialización de vacas y gallinas,
@@ -118,10 +118,12 @@
         </div>  
         <div class="Correo">
             <p>SUSCRÍBETE</p>
-            <form>
-                <input type="email" placeholder="Ingrese su email" required>
-                <button type="submit">Suscribirse</button>
-            </form>
+            <form action="https://formspree.io/f/meooyzal" method="POST">       
+            <label>Correo:
+              <input type="email" name="email">
+            </label>
+            <button type="submit">Enviar</button>
+          </form>
         </div>
     </footer>
 

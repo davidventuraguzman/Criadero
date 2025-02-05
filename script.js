@@ -55,9 +55,7 @@ window.addEventListener('scroll', function() {
 });
 
 //suscribirse
-/* paste this line in verbatim */
-window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-/* customize formbutton below*/     
+window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};    
 formbutton("create", {
   action: "https://formspree.io/f/meooyzal",
   title: "How can we help?",

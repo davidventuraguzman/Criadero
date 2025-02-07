@@ -159,21 +159,6 @@ h1 {
     color: #555;
     line-height: 1.5;
 }
-
-@media (max-width: 768px) {
-    .contene {
-        flex-direction: column;
-    }
-
-    .contenerow img, .texto {
-        width: 100%;
-    }
-
-    .contene{
-        text-align: center;
-    }
-}
-
   /*
   el footer
   */
@@ -255,4 +240,26 @@ h1 {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .contene {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .contene img, .texto {
+        width: 100%;
+    }
+
+    .fondoElementos {
+        margin: 20px; 
+    }
+    .Correo form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Correo input {
+        width: 100%;
+        margin-bottom: 10px;
+    }   
